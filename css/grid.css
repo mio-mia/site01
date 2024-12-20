@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*
+    grid.css
+
+    열 갯수 = 12
+    열 사이 간격 = 40px
+    좌우측 사이드 여백 = 20px
+*/
+
+:root{ --gutter: 40px; --margin: 0px; --width: (100% / 12); --add: (var(--width) + var(--gutter));}
+/*
+    :root = 최상위 요소(= <html>)
+    {} <- 이 안에는 사용자 지정 속성이 들어감
+     --gutter: 40px; = 열 사이 간격
+     --margin: 20px; = 좌우측 여백값
+     --width: (100% / var(--count)); = 넓이 100% / 12개 (= 1칸 너비)
+     --add : --width(1칸 너비) + --gutter(열 사이 간격)
+
+     var(--???) = :root에서 지정한 사용자 속성을 (--???)안에 집어넣어 한번에 작업할 수 있는 방법
+
+
+     # 이것저것 작업할 때 잘 묶어주세요,, 이거 연산순서 엇갈리면 오류남...
+*/
+
+
+.grid{display: flex; flex-direction: row; gap: var(--gutter);
+      padding-left: var(--margin); padding-right: var(--margin);}
+
+
+.grid_item_col_01{flex-basis: calc(var(--width));}
+.grid_item_col_02{flex-basis: calc(var(--width) + var(--add) * 1);}
+.grid_item_col_03{flex-basis: calc(var(--width) + var(--add) * 2);}
+.grid_item_col_04{flex-basis: calc(var(--width) + var(--add) * 3);}
+.grid_item_col_05{flex-basis: calc(var(--width) + var(--add) * 4);}
+.grid_item_col_06{flex-basis: calc(var(--width) + var(--add) * 5);}
+.grid_item_col_07{flex-basis: calc(var(--width) + var(--add) * 6);}
+.grid_item_col_08{flex-basis: calc(var(--width) + var(--add) * 7);}
+.grid_item_col_09{flex-basis: calc(var(--width) + var(--add) * 8);}
+.grid_item_col_10{flex-basis: calc(var(--width) + var(--add) * 9);}
+.grid_item_col_11{flex-basis: calc(var(--width) + var(--add) * 10);}
+.grid_item_col_12{flex-basis: 100%;}

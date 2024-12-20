@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹디자인 - Responsive WebDesign</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div id="logo">
+                <h1><a href="#">lizen.com</a></h1>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li class="depth_01"><a href="#">Home</a></li>
+                    <li class="depth_01"><a href="#">About</a>
+                        <div class="sub">
+                            <ul>
+                                <li class="depth_02"><a href="#">Information</a></li>
+                                <li class="depth_02"><a href="#">History</a></li>
+                                <li class="depth_02"><a href="#">Skill</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth_01"><a href="#">Projects</a>
+                        <div class="sub">
+                            <ul>
+                                <li class="depth_02"><a href="#">Website</a></li>
+                                <li class="depth_02"><a href="#">Visual Design</a></li>
+                                <li class="depth_02"><a href="#">Micro Projects</a></li>
+                                <li class="depth_02"><a href="#">Etc</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth_01"><a href="#">Archiving</a>
+                        <div class="sub">
+                            <ul>
+                                <li class="depth_02"><a href="#">Blog</a></li>
+                                <li class="depth_02"><a href="#">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth_01"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- .inner -->
+    </header>
+    <!-- header end -->
+    <a href="#fixed_area" class="menu_btn"><i></i><i></i><i></i></a>
+
+    <main>
+        <section id="main_view">
+            <div class="inner">
+                <h2>Web Design<br>Digital<br>Academy</h2>
+            </div>
+        </section>
+        <!-- #main_view -->
+
+        <aside id="fixed_area">
+            <div class="inner">
+                <h1><img src="images/header-bar-logo.png" alt="ilzen.com"></h1>
+                <p>Web Design Disital Academy</p>
+                <nav id="main_menu">
+                    <ul>
+                        <li class="depth_01"><a href="#">Home</a></li>
+                        <li class="depth_01"><a href="#">About</a>
+                            <div class="sub">
+                                <ul>
+                                    <li class="depth_02"><a href="#">Information</a></li>
+                                    <li class="depth_02"><a href="#">History</a></li>
+                                    <li class="depth_02"><a href="#">Skill</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="depth_01"><a href="#">Projects</a>
+                            <div class="sub">
+                                <ul>
+                                    <li class="depth_02"><a href="#">Website</a></li>
+                                    <li class="depth_02"><a href="#">Visual Design</a></li>
+                                    <li class="depth_02"><a href="#">Micro Projects</a></li>
+                                    <li class="depth_02"><a href="#">Etc</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="depth_01"><a href="#">Archiving</a>
+                            <div class="sub">
+                                <ul>
+                                    <li class="depth_02"><a href="#">Blog</a></li>
+                                    <li class="depth_02"><a href="#">GitHub</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="depth_01"><a href="#">Contact</a></li>
+                    </ul>
+                </nav> <!-- #main_menu -->
+            </div> <!-- .inner -->
+        </aside> <!-- #fixed_area -->
+
+        <section id="list_01" class="container">
+            <div class="inner">
+                <h3>Main List_(Grid.css)</h3>
+                <ul class="grid">
+                    <li class="grid_item_col_4"><img src="images/list_img_1.jpg" alt=""></li>
+                    <li class="grid_item_col_4"><img src="images/list_img_2.jpg" alt=""></li>
+                    <li class="grid_item_col_4"><img src="images/list_img_3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <!-- #list -->
+        <section id="list_02" class="container">
+            <div class="inner">
+                <h3>Main List_(Grid.css)</h3>
+                <ul class="grid">
+                    <li class="grid_item_col_6"><img src="images/list_img_1.jpg" alt=""></li>
+                    <li class="grid_item_col_6"><img src="images/list_img_2.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <!-- #list -->
+         <section id="main01" class="container">
+            <div class="inner">
+                <h2>Mauris non semper nisi.</h2>
+                <div class="contents">
+                    <article class="grid">
+                        <div class="grid_item_col_4"><img src="images/main-img-1-origin.jpg" alt=""></div>
+                        <div class="grid_item_col_8">
+                            <h3>Aenean non ex dignissim, ullamcorper massa vitae, laoreet enim.</h3>
+                            <p>Cras imperdiet ipsum erat, vel pulvinar elit iaculis quis. Phasellus vitae leo ipsum. Maecenas efficitur libero rutrum orci congue viverra. Vivamus condimentum nibh ut purus lacinia, vitae placerat dui consequat. Mauris sed commodo nisi, non gravida dolor. Mauris at diam at eros porta bibendum eget at mauris.</p>
+                        </div>
+                    </article>
+                    <article class="grid">
+                        <div class="grid_item_col_8" style="order: 2;"><img src="images/main-img-2-origin.jpg" alt=""></div>
+                        <div class="grid_item_col_4" style="order: 1;">
+                            <h3>Morbi et tempor mauris.</h3>
+                            <p>Vivamus rutrum, risus eget sodales mollis, sem nisi tristique lacus, luctus scelerisque nisi mauris sit amet dolor. Curabitur tortor eros, bibendum eget risus ac, faucibus ullamcorper enim. Phasellus rhoncus libero mi, vel semper tortor tempor ac. Nam sed nisl erat. Quisque commodo volutpat efficitur.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+         </section>
+         <!-- #main01 -->
+         <section id="main02" class="container">
+            <div class="inner">
+                <h2>Mauris non semper nisi.</h2>
+                <div class="contents grid">
+                    <article class="grid_item_col_3">
+                        <div><img src="images/main-img-1-origin.jpg" alt=""></div>
+                        <div>
+                            <h3>Aenean non ex dignissim, ullamcorper massa vitae, laoreet enim.</h3>
+                            <p>Cras imperdiet ipsum erat, vel pulvinar elit iaculis quis. Phasellus vitae leo ipsum. Maecenas efficitur libero rutrum orci congue viverra. Vivamus condimentum nibh ut purus lacinia, vitae placerat dui consequat. Mauris sed commodo nisi, non gravida dolor. Mauris at diam at eros porta bibendum eget at mauris.</p>
+                        </div>
+                    </article>
+                    <article class="grid_item_col_3">
+                        <div style="order: 2;"><img src="images/main-img-2-origin.jpg" alt=""></div>
+                        <div style="order: 1;">
+                            <h3>Morbi et tempor mauris.</h3>
+                            <p>Vivamus rutrum, risus eget sodales mollis, sem nisi tristique lacus, luctus scelerisque nisi mauris sit amet dolor. Curabitur tortor eros, bibendum eget risus ac, faucibus ullamcorper enim. Phasellus rhoncus libero mi, vel semper tortor tempor ac. Nam sed nisl erat. Quisque commodo volutpat efficitur.</p>
+                        </div>
+                    </article>
+                    <article class="grid_item_col_6">
+                        <div><img src="images/main-img-2-origin.jpg" alt=""></div>
+                        <div>
+                            <h3>Donec porttitor lobortis justo id malesuada.</h3>
+                            <p>Curabitur rhoncus rutrum risus, eget congue nunc rutrum vitae. Mauris vitae sem quis dolor ullamcorper cursus. Quisque gravida condimentum libero, at vestibulum nisl venenatis ac. Nullam diam massa, aliquam vitae elit eget, maximus hendrerit neque. In tempus ultrices sem, nec consequat diam malesuada eget.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+         </section>
+    </main>
+    <!-- main end / footer start -->
+    <footer>
+        <div class="inner">
+            <address>&copy; 2024 - 2024 <strong>EZEN</strong> Ltd.
+                <a href="#">ilzen.com</a>, Web Design Course are registered trademarks of 
+                <strong>EZEN</strong> Ltd.<br>
+                Please review our Terms of Service as well as our Privacy Politice.
+            </address>
+        </div>
+    </footer>
+
+    <script src="js/EzenScrollClass.js"></script>
+    <script src="js/EzenAddClass.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
